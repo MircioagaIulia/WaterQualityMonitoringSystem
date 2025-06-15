@@ -21,7 +21,7 @@ export default function Prediction() {
                 Temperature: selectedParameter !== "Temperature" ? parseFloat(Temperature) : undefined,
             };
 
-            const response = await axios.post('http://192.168.21.95:5000/predict', inputData);
+            const response = await axios.post(' http://192.168.202.95:5000/predict', inputData);
             //http://192.168.1.134:5000/predict
             
             setPrediction(response.data.prediction);
